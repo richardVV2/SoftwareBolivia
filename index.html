@@ -1,9 +1,842 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-BO">
 <head>
-    <title>Software Bolivia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diseño Web Bolivia | Software y Sistemas a Medida — RVV SYSTEM</title>
+  <meta name="description" content="RVV SYSTEM diseña páginas web, software a medida, aplicaciones, IoT y domótica para empresas y emprendedores en Bolivia. WhatsApp: 70680432.">
+  <meta name="author" content="RVV SYSTEM">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#FFC400">
+  <link rel="canonical" href="https://rvvsystem.bo/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&amp;family=Manrope:wght@400..800&amp;family=Sora:wght@400..800&amp;display=swap">
+  <link rel="preload" as="image" href="images/hero-robot.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.reveal{opacity:1!important;filter:none!important;transform:none!important}</style></noscript>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RVV SYSTEM">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:url" content="https://rvvsystem.bo/">
+  <meta property="og:title" content="Diseño Web Bolivia | Software y Sistemas a Medida — RVV SYSTEM">
+  <meta property="og:description" content="Desarrollo de software, páginas web y soluciones tecnológicas para empresas y negocios en Bolivia. WhatsApp: 70680432.">
+  <meta property="og:image" content="https://rvvsystem.bo/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RVV SYSTEM — Diseño web y desarrollo de software en Bolivia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diseño Web Bolivia | RVV SYSTEM">
+  <meta name="twitter:description" content="Software a medida, páginas web, aplicaciones, IoT y domótica en Bolivia. WhatsApp: 70680432.">
+  <meta name="twitter:image" content="https://rvvsystem.bo/images/og-image.jpg">
+
+  <!-- Datos estructurados: organización, página y servicios -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://rvvsystem.bo/#organizacion",
+        "name": "RVV SYSTEM",
+        "alternateName": "RVV System Bolivia",
+        "url": "https://rvvsystem.bo/",
+        "logo": "https://rvvsystem.bo/images/logo-rvv.svg",
+        "image": "https://rvvsystem.bo/images/og-image.jpg",
+        "description": "Empresa boliviana de diseño y producción de software: desarrollo web, aplicaciones, software a medida, IoT, domótica y sistemas multimedia.",
+        "telephone": "+59170680432",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+59170680432",
+          "contactType": "ventas y atención al cliente",
+          "areaServed": "BO",
+          "availableLanguage": ["es"]
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Bolivia" },
+          { "@type": "AdministrativeArea", "name": "Cochabamba" },
+          { "@type": "AdministrativeArea", "name": "La Paz" },
+          { "@type": "AdministrativeArea", "name": "Santa Cruz" },
+          { "@type": "AdministrativeArea", "name": "Oruro" },
+          { "@type": "AdministrativeArea", "name": "Potosí" },
+          { "@type": "AdministrativeArea", "name": "Chuquisaca" },
+          { "@type": "AdministrativeArea", "name": "Tarija" },
+          { "@type": "AdministrativeArea", "name": "Beni" },
+          { "@type": "AdministrativeArea", "name": "Pando" }
+        ],
+        "knowsAbout": ["Desarrollo web", "Software a medida", "Aplicaciones empresariales", "Internet de las cosas", "Domótica", "Sistemas multimedia"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rvvsystem.bo/#sitio",
+        "url": "https://rvvsystem.bo/",
+        "name": "RVV SYSTEM",
+        "inLanguage": "es-BO",
+        "publisher": { "@id": "https://rvvsystem.bo/#organizacion" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://rvvsystem.bo/#pagina",
+        "url": "https://rvvsystem.bo/",
+        "name": "Diseño Web Bolivia | Software y Sistemas a Medida — RVV SYSTEM",
+        "description": "Diseño web, desarrollo de software, aplicaciones, IoT y domótica para empresas y emprendedores en Bolivia.",
+        "isPartOf": { "@id": "https://rvvsystem.bo/#sitio" },
+        "about": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "inLanguage": "es-BO",
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://rvvsystem.bo/images/og-image.jpg" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-software",
+        "name": "Desarrollo de software a medida",
+        "serviceType": "Desarrollo de software",
+        "description": "Sistemas de gestión empresarial, software administrativo, inventarios, facturación, CRM, ERP y automatización.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-web",
+        "name": "Diseño y desarrollo web",
+        "serviceType": "Desarrollo web",
+        "description": "Páginas web profesionales, tiendas virtuales, portales empresariales, plataformas y landing pages en Bolivia.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-apps",
+        "name": "Desarrollo de aplicaciones",
+        "serviceType": "Desarrollo de aplicaciones",
+        "description": "Aplicaciones Windows, C# y .NET, Android, multiplataforma, empresariales, de control y multimedia.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-iot",
+        "name": "Internet de las cosas (IoT)",
+        "serviceType": "Soluciones IoT",
+        "description": "ESP32, Arduino, sensores, telemetría, monitoreo remoto y plataformas de supervisión.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-domotica",
+        "name": "Domótica y automatización inteligente",
+        "serviceType": "Domótica",
+        "description": "Viviendas inteligentes, control de iluminación, accesos, persianas, sensores, seguridad y automatización de oficinas.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-multimedia",
+        "name": "Sistemas multimedia y entretenimiento",
+        "serviceType": "Sistemas multimedia",
+        "description": "Reproductores personalizados, gestión de audio y video, pantallas digitales, digital signage y software para eventos.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rvvsystem.bo/#servicio-empresarial",
+        "name": "Soluciones tecnológicas empresariales",
+        "serviceType": "Consultoría y soluciones tecnológicas",
+        "description": "Digitalización de negocios, modernización de software, automatización comercial y consultoría tecnológica.",
+        "provider": { "@id": "https://rvvsystem.bo/#organizacion" },
+        "areaServed": "Bolivia"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://rvvsystem.bo/#servicios",
+        "name": "Servicios tecnológicos de RVV SYSTEM",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "item": { "@id": "https://rvvsystem.bo/#servicio-software" } },
+          { "@type": "ListItem", "position": 2, "item": { "@id": "https://rvvsystem.bo/#servicio-web" } },
+          { "@type": "ListItem", "position": 3, "item": { "@id": "https://rvvsystem.bo/#servicio-apps" } },
+          { "@type": "ListItem", "position": 4, "item": { "@id": "https://rvvsystem.bo/#servicio-iot" } },
+          { "@type": "ListItem", "position": 5, "item": { "@id": "https://rvvsystem.bo/#servicio-domotica" } },
+          { "@type": "ListItem", "position": 6, "item": { "@id": "https://rvvsystem.bo/#servicio-multimedia" } },
+          { "@type": "ListItem", "position": 7, "item": { "@id": "https://rvvsystem.bo/#servicio-empresarial" } }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script>
+    document.documentElement.classList.add('js');
+    /* Si main.js no llegara a cargar, muestra el contenido sin animación. */
+    window.setTimeout(function () {
+      if (!document.querySelector('.reveal.is-visible')) {
+        document.documentElement.classList.remove('js');
+      }
+    }, 2500);
+  </script>
 </head>
 <body>
-    <h1>¡Bienvenidos a Software Bolivia!</h1>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="RVV SYSTEM, ir al inicio">
+        <img src="images/logo-rvv.svg" width="42" height="42" alt="">
+        <span class="brand-word"><strong>RVV</strong><small>SYSTEM</small></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="is-active">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#por-que">Por qué RVV</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="nav-wa" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          WhatsApp
+        </a>
+      </nav>
+
+      <a class="header-phone" href="tel:+59170680432">
+        <span>Habla con nosotros</span>
+        <strong>70680432</strong>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="page">
+    <main id="contenido">
+      <!-- ============ PORTADA ============ -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <img src="images/contours-yellow.svg" alt="" class="hero-sun" width="900" height="900" aria-hidden="true">
+        <span class="hero-orange" aria-hidden="true"></span>
+        <span class="hero-teal" aria-hidden="true"></span>
+        <span class="hero-grid-lines" aria-hidden="true"></span>
+
+        <div class="container hero-grid">
+          <div class="hero-media" data-stagger>
+            <span class="hero-halo reveal reveal-scale" aria-hidden="true"></span>
+            <span class="hero-ring reveal reveal-scale" aria-hidden="true"></span>
+            <img class="hero-robot reveal reveal-scale" src="images/hero-robot.webp" width="686" height="810" alt="Robot humanoide blanco de RVV SYSTEM con detalles turquesa" fetchpriority="high" decoding="async">
+            <span class="hero-chip reveal reveal-up"><span></span> Software &amp; diseño</span>
+          </div>
+
+          <div class="hero-copy" data-stagger>
+            <p class="eyebrow reveal">RVV SYSTEM · Bolivia</p>
+            <h1 id="hero-title" class="reveal">Diseño web <span>Bolivia.</span></h1>
+            <p class="hero-subtitle reveal">Desarrollo de software, páginas web y soluciones tecnológicas para empresas y negocios.</p>
+            <p class="hero-text reveal">Transformamos ideas en soluciones digitales. Diseñamos y desarrollamos software, plataformas web y aplicaciones adaptadas a las necesidades de cada negocio.</p>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="#contacto">Solicitar cotización <span class="arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn-outline" href="#servicios">Conocer servicios</a>
+              <a class="btn btn-wa" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                Contactar por WhatsApp
+              </a>
+            </div>
+            <a class="hero-phone reveal" href="tel:+59170680432">
+              <span>Teléfono / WhatsApp</span>
+              <strong>70680432</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="container hero-foot">
+          <p class="scroll-cue"><span aria-hidden="true"></span> Desliza para descubrir</p>
+          <ul class="hero-facts">
+            <li><strong>Bolivia</strong><span>Cobertura nacional</span></li>
+            <li><strong>100% a medida</strong><span>Sin plantillas cerradas</span></li>
+            <li><strong>Atención directa</strong><span>Con el equipo que desarrolla</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ FRANJA TURQUESA ============ -->
+      <section class="band" aria-label="Especialidades de RVV SYSTEM">
+        <div class="container band-grid">
+          <p class="band-title">Tecnología hecha en Bolivia</p>
+          <p class="band-copy">Software, web, aplicaciones, IoT y domótica para empresas y emprendedores.</p>
+          <p class="band-list">Web <span>·</span> Software <span>·</span> Apps <span>·</span> IoT <span>·</span> Domótica</p>
+        </div>
+      </section>
+
+      <!-- ============ SERVICIOS ============ -->
+      <section class="section services" id="servicios" aria-labelledby="servicios-title">
+        <div class="container section-head" data-stagger>
+          <p class="eyebrow reveal">Servicios profesionales</p>
+          <h2 id="servicios-title" class="reveal">Nuestros servicios <em>tecnológicos.</em></h2>
+          <p class="section-lead reveal">En RVV SYSTEM ofrecemos desarrollo de software en Bolivia, diseño de páginas web, tiendas virtuales, aplicaciones empresariales, domótica y soluciones IoT. Un solo equipo para llevar tu idea del concepto a la producción.</p>
+        </div>
+
+        <div class="container services-list">
+          <!-- 01 -->
+          <article class="service" id="servicio-software" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">01</span>
+              <span class="shape shape-disc shape-disc--yellow reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--teal reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-arch reveal reveal-left">
+                <img src="images/software.webp" width="768" height="726" alt="Robot tecnológico en una composición de desarrollo de software a medida" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Software</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>01</span> Software empresarial</p>
+              <h3 class="reveal">Desarrollo de software a medida</h3>
+              <p class="reveal">Construimos sistemas que se adaptan a la forma en que trabaja tu empresa: desde el control de inventarios hasta la facturación diaria, con información clara y procesos más simples.</p>
+              <ul class="solution-list reveal">
+                <li>Sistemas de gestión empresarial.</li>
+                <li>Software administrativo y comercial.</li>
+                <li>Inventarios y almacenes.</li>
+                <li>Facturación y ventas.</li>
+                <li>CRM y ERP.</li>
+                <li>Automatización administrativa.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Desarrollo de software a medida">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="service" id="servicio-web" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">02</span>
+              <span class="shape shape-disc shape-disc--teal reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--yellow reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-circle reveal reveal-right">
+                <img src="images/desarrollo-web.webp" width="900" height="900" alt="Robot tecnológico de RVV SYSTEM trabajando con una laptop, desarrollo web profesional" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Web</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>02</span> Experiencias digitales</p>
+              <h3 class="reveal">Diseño y desarrollo web</h3>
+              <p class="reveal">Creamos sitios y plataformas web rápidas, seguras y pensadas para convertir visitas en oportunidades: tu negocio visible, profesional y disponible en todo Bolivia.</p>
+              <ul class="solution-list reveal">
+                <li>Páginas web profesionales.</li>
+                <li>Tiendas virtuales.</li>
+                <li>Portales empresariales e institucionales.</li>
+                <li>Plataformas web interactivas.</li>
+                <li>Sistemas web administrativos.</li>
+                <li>Catálogos digitales.</li>
+                <li>Landing pages.</li>
+                <li>Reservas y citas online.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Diseño y desarrollo web">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="service" id="servicio-apps" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">03</span>
+              <span class="shape shape-disc shape-disc--orange reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--teal reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-blob reveal reveal-left">
+                <img src="images/aplicaciones.webp" width="768" height="726" alt="Robot con teléfono y tablet, desarrollo de aplicaciones para empresas" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Aplicaciones</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>03</span> Movilidad y escritorio</p>
+              <h3 class="reveal">Desarrollo de aplicaciones</h3>
+              <p class="reveal">Llevamos tu operación a computadoras, tablets y teléfonos con aplicaciones estables y fáciles de usar, conectadas con las necesidades reales de tus equipos.</p>
+              <ul class="solution-list reveal">
+                <li>Aplicaciones Windows.</li>
+                <li>Aplicaciones C# y .NET.</li>
+                <li>Aplicaciones Android.</li>
+                <li>Aplicaciones multiplataforma.</li>
+                <li>Aplicaciones empresariales.</li>
+                <li>Control y monitoreo.</li>
+                <li>Aplicaciones multimedia.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Desarrollo de aplicaciones">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="service" id="servicio-iot" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">04</span>
+              <span class="shape shape-disc shape-disc--yellow reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--teal reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-squircle reveal reveal-right">
+                <img src="images/iot.webp" width="768" height="726" alt="Robot conectado a sensores y circuitos electrónicos para soluciones IoT" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> IoT</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>04</span> Hardware + software</p>
+              <h3 class="reveal">Internet de las cosas (IoT)</h3>
+              <p class="reveal">Conectamos hardware y software para que puedas medir, monitorear y controlar lo que ocurre en campo, en una planta o en cualquier instalación.</p>
+              <ul class="solution-list reveal">
+                <li>Soluciones IoT.</li>
+                <li>ESP32 y Arduino.</li>
+                <li>Monitoreo remoto.</li>
+                <li>Sensores y actuadores.</li>
+                <li>Telemetría.</li>
+                <li>Comunicación entre dispositivos.</li>
+                <li>Monitoreo de temperatura, humedad y energía.</li>
+                <li>Plataformas de supervisión.</li>
+                <li>Integración de hardware y software.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Internet de las cosas (IoT)">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article class="service" id="servicio-domotica" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">05</span>
+              <span class="shape shape-disc shape-disc--teal reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--yellow reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-arch-alt reveal reveal-left">
+                <img src="images/domotica.webp" width="768" height="726" alt="Robot controlando una vivienda inteligente con domótica" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Domótica</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>05</span> Espacios inteligentes</p>
+              <h3 class="reveal">Domótica y automatización inteligente</h3>
+              <p class="reveal">Convertimos casas, oficinas y edificios en espacios inteligentes: iluminación, accesos, sensores y equipos bajo control desde tu teléfono.</p>
+              <ul class="solution-list reveal">
+                <li>Viviendas inteligentes.</li>
+                <li>Control de iluminación.</li>
+                <li>Puertas y accesos.</li>
+                <li>Motores y persianas.</li>
+                <li>Control remoto de dispositivos.</li>
+                <li>Seguridad y sensores.</li>
+                <li>Control mediante aplicaciones.</li>
+                <li>Domótica con ESP32.</li>
+                <li>Automatización de oficinas y edificios.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Domótica y automatización inteligente">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 06 -->
+          <article class="service" id="servicio-multimedia" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">06</span>
+              <span class="shape shape-disc shape-disc--orange reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--teal reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-circle reveal reveal-right">
+                <img src="images/multimedia.webp" width="768" height="726" alt="Robot en un estudio multimedia con pantallas y equipos de audio y video" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Multimedia</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>06</span> Audio, video y pantallas</p>
+              <h3 class="reveal">Sistemas multimedia y entretenimiento</h3>
+              <p class="reveal">Diseñamos soluciones para gestionar audio, video y pantallas digitales con reproducción automatizada y una experiencia visual cuidada.</p>
+              <ul class="solution-list reveal">
+                <li>Reproductores personalizados.</li>
+                <li>Gestión de audio y video.</li>
+                <li>Pantallas digitales.</li>
+                <li>Digital Signage.</li>
+                <li>Reproducción automatizada.</li>
+                <li>Software para eventos.</li>
+                <li>Control de sonido.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Sistemas multimedia y entretenimiento">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- 07 -->
+          <article class="service" id="servicio-empresarial" data-stagger>
+            <div class="service-media">
+              <span class="service-ghost" aria-hidden="true">07</span>
+              <span class="shape shape-disc shape-disc--yellow reveal reveal-scale" aria-hidden="true"></span>
+              <span class="shape shape-ring shape-ring--teal reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="service-frame frame-blob-alt reveal reveal-left">
+                <img src="images/empresarial.webp" width="768" height="726" alt="Robot analizando información empresarial y paneles de datos" loading="lazy" decoding="async">
+              </figure>
+              <span class="media-label reveal reveal-up"><span></span> Empresas</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-kicker reveal"><span>07</span> Transformación digital</p>
+              <h3 class="reveal">Soluciones tecnológicas empresariales</h3>
+              <p class="reveal">Ordenamos procesos, modernizamos herramientas y conectamos áreas de tu empresa con soluciones tecnológicas hechas a la medida de tus objetivos.</p>
+              <ul class="solution-list reveal">
+                <li>Digitalización de negocios.</li>
+                <li>Modernización de software.</li>
+                <li>Soluciones personalizadas.</li>
+                <li>Sistemas de control y supervisión.</li>
+                <li>Automatización comercial.</li>
+                <li>Consultoría tecnológica.</li>
+              </ul>
+              <a class="text-link reveal" href="#contacto" data-service="Soluciones tecnológicas empresariales">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ POR QUÉ ELEGIR RVV ============ -->
+      <section class="section why" id="por-que" aria-labelledby="porque-title">
+        <span class="why-bg-sun" aria-hidden="true"></span>
+        <div class="container why-grid">
+          <div class="why-media" data-stagger>
+            <span class="why-ring reveal reveal-scale" aria-hidden="true"></span>
+            <span class="why-disc reveal reveal-scale" aria-hidden="true"></span>
+            <figure class="why-frame reveal reveal-left">
+              <img src="images/why-robot.webp" width="640" height="800" alt="Robot ingeniero de RVV SYSTEM, tecnología que impulsa ideas" loading="lazy" decoding="async">
+            </figure>
+            <div class="why-sticker reveal reveal-up">
+              <strong>RVV</strong>
+              <span>Software + hardware<br>Hecho en Bolivia</span>
+            </div>
+          </div>
+
+          <div class="why-copy" data-stagger>
+            <p class="eyebrow reveal">Por qué elegir RVV SYSTEM</p>
+            <h2 id="porque-title" class="reveal">Tecnología que <em>impulsa tus ideas.</em></h2>
+            <p class="section-lead reveal">No vendemos plantillas: entendemos tu negocio, diseñamos la solución y la construimos contigo. Esa cercanía se nota en el resultado.</p>
+            <ul class="reasons-list">
+              <li class="reason reveal">
+                <span>01</span>
+                <h3>Soluciones personalizadas</h3>
+                <p>Cada proyecto parte de tu contexto, no de una plantilla.</p>
+              </li>
+              <li class="reason reveal">
+                <span>02</span>
+                <h3>Software a medida</h3>
+                <p>Diseñamos el sistema que tu operación necesita.</p>
+              </li>
+              <li class="reason reveal">
+                <span>03</span>
+                <h3>Tecnología moderna</h3>
+                <p>Herramientas actuales y bases preparadas para crecer.</p>
+              </li>
+              <li class="reason reveal">
+                <span>04</span>
+                <h3>Atención directa</h3>
+                <p>Hablas con quien desarrolla, sin intermediarios.</p>
+              </li>
+              <li class="reason reveal">
+                <span>05</span>
+                <h3>Para empresas y emprendedores</h3>
+                <p>Soluciones a la escala de tu equipo y tus objetivos.</p>
+              </li>
+              <li class="reason reveal">
+                <span>06</span>
+                <h3>Software y hardware</h3>
+                <p>Integramos desarrollo, electrónica y automatización.</p>
+              </li>
+            </ul>
+            <a class="btn btn-dark reveal" href="#contacto">Conversemos <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TECNOLOGÍAS ============ -->
+      <section class="section tech" id="tecnologias" aria-labelledby="tecnologias-title">
+        <span class="tech-glow" aria-hidden="true"></span>
+        <div class="container">
+          <div class="tech-head" data-stagger>
+            <p class="eyebrow reveal">Tecnologías y desarrollos</p>
+            <h2 id="tecnologias-title" class="reveal">Tecnologías y <em>desarrollos.</em></h2>
+            <p class="section-lead reveal">Combinamos herramientas actuales con una mirada práctica: la tecnología debe resolver problemas reales, no complicar tu día a día.</p>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-list" data-stagger>
+              <article class="tech-item reveal">
+                <span class="tech-num">01</span>
+                <h3>Desarrollo web</h3>
+                <p>Sitios corporativos, tiendas virtuales y plataformas a medida.</p>
+              </article>
+              <article class="tech-item reveal">
+                <span class="tech-num">02</span>
+                <h3>Inteligencia artificial</h3>
+                <p>Automatización de tareas y asistentes conectados a tus procesos.</p>
+              </article>
+              <article class="tech-item reveal">
+                <span class="tech-num">03</span>
+                <h3>Aplicaciones empresariales</h3>
+                <p>Software de gestión para escritorio, web y móvil.</p>
+              </article>
+              <article class="tech-item reveal">
+                <span class="tech-num">04</span>
+                <h3>Automatización</h3>
+                <p>Procesos administrativos y operativos con menos tareas manuales.</p>
+              </article>
+              <article class="tech-item reveal">
+                <span class="tech-num">05</span>
+                <h3>Internet de las cosas</h3>
+                <p>Sensores, ESP32 y paneles de monitoreo en tiempo real.</p>
+              </article>
+              <article class="tech-item reveal">
+                <span class="tech-num">06</span>
+                <h3>Sistemas multimedia</h3>
+                <p>Audio, video, señalización digital y reproducción automatizada.</p>
+              </article>
+            </div>
+
+            <div class="tech-media" data-stagger>
+              <span class="tech-halo reveal reveal-scale" aria-hidden="true"></span>
+              <span class="tech-orbit reveal reveal-scale" aria-hidden="true"></span>
+              <figure class="tech-frame reveal reveal-scale">
+                <img src="images/tech-ai.webp" width="768" height="720" alt="Robot con circuitos neuronales, inteligencia artificial y tecnología avanzada" loading="lazy" decoding="async">
+              </figure>
+              <span class="tech-dot reveal reveal-scale" aria-hidden="true"></span>
+              <p class="tech-caption reveal reveal-up">Inteligencia aplicada<br><strong>a procesos reales.</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROYECTOS ============ -->
+      <section class="section projects" id="proyectos" aria-labelledby="proyectos-title">
+        <div class="container">
+          <div class="projects-head" data-stagger>
+            <div>
+              <p class="eyebrow reveal">Proyectos</p>
+              <h2 id="proyectos-title" class="reveal">Ideas que <em>toman forma.</em></h2>
+            </div>
+            <p class="projects-intro reveal">Una muestra visual de conceptos que desarrollamos. Son ejemplos demostrativos, no trabajos entregados a clientes.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project project--feature reveal reveal-scale">
+              <figure><img src="images/project-erp.webp" width="1000" height="720" alt="Panel de software de gestión con gráficos y métricas, proyecto demostrativo Nexo ERP" loading="lazy" decoding="async"></figure>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+              <div class="project-body">
+                <div class="project-meta"><span>Software de gestión</span><span class="demo">Concepto demo</span></div>
+                <h3>Nexo ERP</h3>
+                <p>Panel demostrativo para ventas, inventario y facturación con reportes claros.</p>
+              </div>
+            </article>
+
+            <article class="project project--side reveal reveal-scale">
+              <figure><img src="images/project-shop.webp" width="800" height="520" alt="Persona utilizando un punto de venta, concepto de tienda virtual Andes Market" loading="lazy" decoding="async"></figure>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+              <div class="project-body">
+                <div class="project-meta"><span>Comercio electrónico</span><span class="demo">Concepto demo</span></div>
+                <h3>Andes Market</h3>
+                <p>Tienda virtual con catálogo, carrito y pedido final por WhatsApp.</p>
+              </div>
+            </article>
+
+            <article class="project reveal reveal-scale">
+              <figure><img src="images/project-iot.webp" width="886" height="617" alt="Sala moderna con pantalla de control, concepto de domótica Casa Viva" loading="lazy" decoding="async"></figure>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+              <div class="project-body">
+                <div class="project-meta"><span>Domótica e IoT</span><span class="demo">Concepto demo</span></div>
+                <h3>Casa Viva</h3>
+                <p>Control de iluminación, temperatura y sensores desde una aplicación.</p>
+              </div>
+            </article>
+
+            <article class="project reveal reveal-scale">
+              <figure><img src="images/project-app.webp" width="800" height="520" alt="Teléfono con aplicaciones móviles, prototipo demostrativo Ruta Pro" loading="lazy" decoding="async"></figure>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+              <div class="project-body">
+                <div class="project-meta"><span>Aplicaciones móviles</span><span class="demo">Concepto demo</span></div>
+                <h3>Ruta Pro</h3>
+                <p>Prototipo de app para reservas de servicios, agenda y seguimiento.</p>
+              </div>
+            </article>
+
+            <article class="project reveal reveal-scale">
+              <figure><img src="images/project-web.webp" width="760" height="760" alt="Laptop con código y diseño web, concepto de sitio corporativo Estudio Norte" loading="lazy" decoding="async"></figure>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+              <div class="project-body">
+                <div class="project-meta"><span>Desarrollo web</span><span class="demo">Concepto demo</span></div>
+                <h3>Estudio Norte</h3>
+                <p>Sitio corporativo responsive con servicios, equipo y contacto.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="projects-note reveal">Los nombres, imágenes y descripciones de esta galería son ejemplos demostrativos. No representan clientes, testimonios ni proyectos reales.</p>
+        </div>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+        <span class="contact-sun" aria-hidden="true"></span>
+        <span class="contact-ring" aria-hidden="true"></span>
+        <div class="container contact-grid">
+          <div class="contact-copy" data-stagger>
+            <p class="eyebrow reveal">Contacto y cotizaciones</p>
+            <h2 id="contacto-title" class="reveal">¿Tienes un proyecto <em>en mente?</em></h2>
+            <p class="section-lead reveal">Cuéntanos qué necesitas. En RVV SYSTEM desarrollamos soluciones tecnológicas adaptadas a tus objetivos.</p>
+            <ul class="contact-points reveal">
+              <li><span aria-hidden="true">✓</span> Respuesta directa por WhatsApp o teléfono.</li>
+              <li><span aria-hidden="true">✓</span> Atención para empresas y emprendedores en toda Bolivia.</li>
+              <li><span aria-hidden="true">✓</span> Cotización según el alcance real de tu proyecto.</li>
+            </ul>
+            <div class="contact-direct reveal">
+              <p>Llámanos o escríbenos</p>
+              <a class="contact-tel" href="tel:+59170680432">70680432</a>
+              <a class="contact-wa" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+                WhatsApp +591 70680432
+              </a>
+              <p class="contact-web">Web: <a href="https://rvvsystem.bo" target="_blank" rel="noopener">rvvsystem.bo</a></p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal-up">
+            <form id="quote-form" class="quote-form" novalidate>
+              <div class="form-head">
+                <span>Cotización</span>
+                <strong>Cuéntanos tu idea</strong>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+                  <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="80" required aria-describedby="error-nombre">
+                  <small class="field-error" id="error-nombre"></small>
+                </div>
+                <div class="field">
+                  <label for="empresa">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" autocomplete="organization" maxlength="100">
+                  <small class="field-error" id="error-empresa"></small>
+                </div>
+                <div class="field">
+                  <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefono" name="telefono" autocomplete="tel" maxlength="30" required aria-describedby="error-telefono">
+                  <small class="field-error" id="error-telefono"></small>
+                </div>
+                <div class="field">
+                  <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+                  <input type="email" id="correo" name="correo" autocomplete="email" maxlength="120" required aria-describedby="error-correo">
+                  <small class="field-error" id="error-correo"></small>
+                </div>
+                <div class="field full">
+                  <label for="servicio">Servicio solicitado <span aria-hidden="true">*</span></label>
+                  <select id="servicio" name="servicio" required aria-describedby="error-servicio">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Desarrollo de software a medida">Desarrollo de software a medida</option>
+                    <option value="Diseño y desarrollo web">Diseño y desarrollo web</option>
+                    <option value="Desarrollo de aplicaciones">Desarrollo de aplicaciones</option>
+                    <option value="Internet de las cosas (IoT)">Internet de las cosas (IoT)</option>
+                    <option value="Domótica y automatización inteligente">Domótica y automatización inteligente</option>
+                    <option value="Sistemas multimedia y entretenimiento">Sistemas multimedia y entretenimiento</option>
+                    <option value="Soluciones tecnológicas empresariales">Soluciones tecnológicas empresariales</option>
+                  </select>
+                  <small class="field-error" id="error-servicio"></small>
+                </div>
+                <div class="field full">
+                  <label for="descripcion">Descripción del proyecto <span aria-hidden="true">*</span></label>
+                  <textarea id="descripcion" name="descripcion" rows="4" maxlength="1200" required aria-describedby="error-descripcion"></textarea>
+                  <small class="field-error" id="error-descripcion"></small>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit">Solicitar cotización <span class="arrow" aria-hidden="true">→</span></button>
+              <p class="form-note">Este sitio no almacena tus datos en un servidor. Al enviar, se abrirá WhatsApp con tu solicitud lista para que la revises y la envíes.</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LLAMADA FINAL ============ -->
+      <section class="final-cta" aria-labelledby="cta-title">
+        <span class="cta-sun" aria-hidden="true"></span>
+        <span class="cta-ring" aria-hidden="true"></span>
+        <div class="container" data-stagger>
+          <p class="eyebrow reveal">Hablemos de tu idea</p>
+          <h2 id="cta-title" class="reveal">Hagamos realidad <em>tu próximo proyecto.</em></h2>
+          <div class="final-actions reveal">
+            <a class="btn btn-dark btn-lg" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              Contactar por WhatsApp
+            </a>
+            <a class="final-phone" href="tel:+59170680432">70680432</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#inicio" aria-label="RVV SYSTEM, volver al inicio">
+            <img src="images/logo-rvv.svg" width="46" height="46" alt="">
+            <span class="brand-word"><strong>RVV</strong><small>SYSTEM</small></span>
+          </a>
+          <p class="footer-claim">Diseño y producción de software en Bolivia.</p>
+          <p class="footer-desc">Soluciones digitales para empresas y emprendedores en Cochabamba, La Paz, Santa Cruz, Oruro, Potosí, Chuquisaca, Tarija, Beni y Pando.</p>
+          <a class="footer-wa" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Navegación</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#por-que">Por qué RVV</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Servicios</h3>
+          <ul class="footer-links">
+            <li><a href="#servicio-software">Software a medida</a></li>
+            <li><a href="#servicio-web">Diseño web</a></li>
+            <li><a href="#servicio-apps">Aplicaciones</a></li>
+            <li><a href="#servicio-iot">Soluciones IoT</a></li>
+            <li><a href="#servicio-domotica">Domótica</a></li>
+            <li><a href="#servicio-multimedia">Multimedia</a></li>
+            <li><a href="#servicio-empresarial">Soluciones empresariales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contacto</h3>
+          <address class="footer-contact">
+            <a href="tel:+59170680432">Teléfono: 70680432</a>
+            <a href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener">WhatsApp: +591 70680432</a>
+            <a href="https://rvvsystem.bo" target="_blank" rel="noopener">rvvsystem.bo</a>
+            <span>Bolivia · Atención nacional</span>
+          </address>
+          <a class="footer-cta" href="#contacto">Solicitar cotización <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year">2026</span> RVV SYSTEM. Todos los derechos reservados.</p>
+        <p>Diseño web y desarrollo de software en Bolivia.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- WhatsApp flotante -->
+  <a class="whatsapp-float" href="https://wa.me/59170680432?text=Hola%2C%20RVV%20SYSTEM.%20Estoy%20interesado%20en%20conocer%20sus%20servicios%20tecnol%C3%B3gicos." target="_blank" rel="noopener" aria-label="Contactar a RVV SYSTEM por WhatsApp al +591 70680432">
+    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+    <span>Hablemos</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

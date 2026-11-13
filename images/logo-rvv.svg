@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="RVV SYSTEM">
+  <rect width="128" height="128" rx="30" fill="#082B2B"/>
+  <path d="M34 98V32h34c19 0 30 10 30 25 0 14-9 23-25 24" fill="none" stroke="#FFC400" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64 81l32 17" fill="none" stroke="#11BDB4" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="96" cy="34" r="8" fill="#11BDB4"/>
+</svg>
